@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bandas de Jazz</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --accent: #f59e0b;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #020617, #0f172a);
+      color: var(--text);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 10px;
+      color: var(--muted);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      padding: 20px;
+      transition: 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top right, rgba(245,158,11,0.25), transparent);
+      opacity: 0;
+      transition: 0.3s;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+
+    .card h2 {
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .badge {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(245,158,11,0.15);
+      color: var(--accent);
+      font-size: 0.75rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bandas de Jazz</h1>
+    <p>Explora algunos de los grupos más influyentes del jazz moderno y clásico</p>
+  </header>
+
+  <section class="container">
+    <div class="card">
+      <h2>Snarky Puppy</h2>
+      <p>Banda de jazz fusión ganadora del Grammy conocida por su sonido moderno, colaboraciones y energía en directo.</p>
+      <span class="badge">Jazz Fusión</span>
+    </div>
+
+    <div class="card">
+      <h2>The Bad Plus</h2>
+      <p>Trío que mezcla jazz con rock y música contemporánea, famoso por reinterpretar canciones populares.</p>
+      <span class="badge">Jazz Alternativo</span>
+    </div>
+
+    <div class="card">
+      <h2>Jazz Messengers</h2>
+      <p>Grupo liderado por Art Blakey que ayudó a definir el hard bop y lanzó la carrera de muchos músicos legendarios.</p>
+      <span class="badge">Hard Bop</span>
+    </div>
+
+    <div class="card">
+      <h2>Weather Report</h2>
+      <p>Una de las bandas más importantes del jazz fusión, con Jaco Pastorius y Joe Zawinul.</p>
+      <span class="badge">Jazz Fusión</span>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 — Página de Jazz · Diseño moderno con HTML y CSS
+  </footer>
+</body>
+</html>
