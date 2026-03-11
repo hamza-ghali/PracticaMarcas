@@ -10,6 +10,7 @@ body {
 
 #ordenador {
     position: sticky;
+    z-index: 1000;
     top: 0;
     background: white;
     border-bottom: 1px solid #E5E7EB;
@@ -44,6 +45,7 @@ body {
     flex-direction: column;
     background: white;
     position: sticky;
+    z-index: 1000;
     top: 0;
     border-bottom: 1px solid #E5E7EB;
 }
