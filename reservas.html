@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reservas | Restaurante Unendo</title>
+
+    <link rel="stylesheet" href="reservas.css">
+
+
+</head>
+
+<body>
+
+
+    <nav id="ordenador">
+
+        <div class="nav-container">
+
+
+
+            <div class="menu-links">
+
+                <a href="index.html">Inicio</a>
+                <a href="menu.html">Carta</a>
+                <a href="reservas.html">Reservas</a>
+                <a href="eventos.html">Eventos</a>
+                <a href="contacto.html">Contacto</a>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <nav id="movil">
+
+        <a href="index.html">Inicio</a>
+        <a href="menu.html">Carta</a>
+        <a href="reservas.html">Reservas</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="contacto.html">Contacto</a>
+
+    </nav>
+
+
+
+    <header>
+
+        <h1>Reservas | Unendo</h1>
+
+    </header>
+
+
+
+    <main>
+
+        <h2>Reservar Mesa</h2>
+
+        <section class="reserva">
+
+            <form action="#" method="post">
+
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="fecha">Fecha</label>
+                <input type="date" id="fecha" name="fecha" required>
+
+                <label for="personas">Número de personas</label>
+                <input type="number" id="personas" name="personas" min="1" required>
+
+                <label for="pedido">Reservar Arroces:</label>
+                <div>
+                    <input type="checkbox" id="plato1" name="platos" value="bogavante">
+                    <label for="plato1">Arroz Caldoso con Bogavante</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="plato2" name="platos" value="negro">
+                    <label for="plato2">Arroz Negro con Calamares
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="plato3" name="platos" value="pitu">
+                    <label for="plato3">Arroz con Pitu Caleya
+                    </label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="plato4" name="platos" value="pulpo">
+                    <label for="plato4">Arroz con Pulpo
+                    </label>
+                </div>
+                <div>
+                    <input type="checkbox" id="plato4" name="platos" value="ciego">
+                    <label for="plato4">Arroz del Ciego
+                    </label>
+                </div>
+
+
+                <button type="submit">Enviar Reserva</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+
+    <footer>
+
+        <p><strong>Dirección:</strong> Calle Fuente de la Plata, 103, Oviedo</p>
+        <p><strong>Teléfono:</strong> 984 25 06 06</p>
+        <p>&copy; 2026 Restaurante Unendo</p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #F9FAFB;
+    color: #1F2937;
+    line-height: 1.6;
+}
+
+
+
+
+#ordenador {
+    background: white;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+
+
+.menu-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: #C8A96A;
+}
+
+
+
+#movil {
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 15px;
+}
+
+#movil a {
+    margin: 8px 0;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+
+
+header {
+    background: #111827;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+
+
+main {
+    max-width: 1000px;
+    margin: 90px auto;
+    padding: 0 20px;
+}
+
+
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 60px;
+}
+
+h2::after {
+
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #C8A96A;
+    margin: 12px auto 0;
+}
+
+
+
+
+.evento {
+    display: flex;
+    gap: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.evento img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.evento-texto h3 {
+    margin-top: 0;
+    color: #C8A96A;
+    font-size: 24px;
+}
+
+.evento-texto p {
+    color: #6B7280;
+}
+
+
+
+footer {
+    background: #111827;
+    color: white;
+    padding: 45px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+
+@media (max-width:768px) {
+
+    #ordenador {
+        display: none;
+    }
+
+    #movil {
+        display: flex;
+    }
+
+    .evento {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .evento img {
+        width: 100%;
+        height: 220px;
+    }
+
+}

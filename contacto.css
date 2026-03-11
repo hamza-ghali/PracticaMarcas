@@ -1,0 +1,202 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #F9FAFB;
+    color: #1F2937;
+    line-height: 1.6;
+}
+
+
+
+
+#ordenador {
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+}
+
+
+
+.menu-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-links a:hover {
+    color: #C8A96A;
+}
+
+
+
+
+#movil {
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 15px;
+}
+
+#movil a {
+    margin: 8px 0;
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+}
+
+
+
+
+header {
+    background: #111827;
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+
+
+
+main {
+    max-width: 800px;
+    margin: 90px auto;
+    padding: 0 20px;
+}
+
+
+
+
+h2 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #C8A96A;
+    margin: 12px auto 0;
+}
+
+
+
+
+.info {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+
+
+.formulario {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 500;
+}
+
+input,
+textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #C8A96A;
+}
+
+
+
+
+button {
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    background: #C8A96A;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #b79658;
+}
+
+
+
+
+footer {
+    background: #111827;
+    color: white;
+    padding: 45px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+
+
+@media (max-width:768px) {
+
+    #ordenador {
+        display: none;
+    }
+
+    #movil {
+        display: flex;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .formulario {
+        padding: 25px;
+    }
+
+}
